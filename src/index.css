@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    background-color: #fff;
+  }
+
+  .button {
+    @apply bg-gray-700 rounded-lg px-2 py-2 hover:bg-gray-700/50 transition
+  }
+
+  ::-webkit-scrollbar {
+    background-color: #EBECF1;
+    width: 0.4vw;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+  }
+
+  .sideLink {
+    @apply flex w-full mx-auto text-gray-500 transition rounded-md;
+  }
+
+  .sideLink a {
+    @apply text-sm font-normal flex items-center p-1 capitalize w-full justify-between
+  }
+
+  .sideLink a span {
+    @apply block mr-auto
+  }
+
+  .sideLink:hover,
+  .sideLink.active {
+    @apply bg-black text-white
+  }
+
+  .sideLink a svg {
+    @apply w-[40%] text-lg text-end font-thin;
+  }
+
+  .recharts-default-tooltip {
+    background-color: black !important;
+    border-color: black !important;
+    color: white !important;
+    @apply rounded-lg
+  }
+}
